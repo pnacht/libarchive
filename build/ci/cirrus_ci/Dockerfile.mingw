@@ -1,4 +1,4 @@
-FROM cirrusci/windowsservercore:2019
+FROM cirrusci/windowsservercore:2019@sha256:79afd5519acf666dee1dfd0bc22b5f903254f63bcb113a3388b0458ca85efa05
 
 RUN choco install -y --no-progress --installargs 'ADD_CMAKE_TO_PATH=User' cmake
 RUN choco install -y --no-progress mingw
